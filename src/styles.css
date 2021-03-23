@@ -1,0 +1,84 @@
+.App {
+  font-family: Courier, monospace;
+  text-align: center;
+}
+
+.RowOfLC {
+  display: flex;
+  justify-content: center;
+  background-color: plum;
+  font-style: bold;
+  font-size: 20px;
+  flex-flow: row wrap;
+  margin-top: 15px;
+}
+
+.OneLC {
+  margin: 5px;
+}
+
+.MainEncrypted {
+  display: flex;
+  justify-content: left;
+  flex-flow: row wrap;
+  background-color: salmon;
+}
+
+.App h1,
+h2,
+h3 {
+  font-family: sans-serif;
+}
+
+.EncryptedWord {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  padding: 0 10px;
+  background-color: salmon;
+}
+
+.LetterSpace {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  padding: 5px;
+  background-color: salmon;
+}
+
+.InputBox {
+  font-size: 15px;
+  font-weight: normal;
+  height: 20px;
+  padding: 10px;
+}
+
+.SubmitQuote,
+.QuoteButton,
+.ResetButton {
+  font-size: 20px;
+  text-align: center;
+  font-weight: normal;
+  padding: 10px;
+}
+
+.LetterEntry {
+  background-color: white;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Courier, monospace;
+  padding: 5px;
+  width: 14px;
+}
+
+.CodedLetter {
+  background-color: salmon;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.Punctuation {
+  background-color: salmon;
+  font-weight: bold;
+}
