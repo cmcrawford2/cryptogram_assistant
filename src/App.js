@@ -118,6 +118,10 @@ class App extends React.Component {
   };
 
   renderSolution = () => {
+    // If there's nothing to render, just return.
+    if (this.state.encrypted === "") {
+      return;
+    }
     // Render all the letters at once!!!!
     // This is required to give input letter boxes an id that points back to the coded letter.
     // Rendered letters include a guess input box above each A-Z,
@@ -185,16 +189,16 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1>Personal Cryptogram Assistant</h1>
-        <h3>I will make it easy for you to solve a cryptogram!</h3>
+        <h2>I will make it easy for you to solve a cryptogram!</h2>
         <input
           className="UserCryptogram"
           type="text"
-          id="UserInputBox"
-          placeholder="Enter your cryptogram here..."
+          id="UserInputBox" /* Need this to clear input if quote is selected. */
+          placeholder=" Enter your cryptogram here..."
           /* value={this.state.encrypted} */
           onChange={this.updateMessage}
         />
-        <h3>Or try one from my vault!</h3>
+        <h2>Or try one from my vault!</h2>
         <button className="QuoteButton" onClick={this.loadQuote}>
           Quote
         </button>

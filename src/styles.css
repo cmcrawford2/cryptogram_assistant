@@ -1,14 +1,18 @@
 .App {
-  font-family: Courier, monospace;
+  font-family: /*'Montserrat',*/ sans-serif;
   text-align: center;
   padding-top: 10px;
   background-color: peachpuff;
+  height: 1200px;
+  background-image: url(https://i.ibb.co/BnjYJyK/little-letters.gif);
+  background-position: center;
+  background-repeat: repeat;
 }
 
 .RowOfLC {
   display: flex;
   justify-content: center;
-  background-color: plum;
+  background-color: white;
   font-style: bold;
   font-size: 20px;
   flex-flow: row wrap;
@@ -23,7 +27,7 @@
   display: flex;
   justify-content: left;
   flex-flow: row wrap;
-  background-color: salmon;
+  /*background-color: salmon;*/
   padding-top: 20px;
   margin-top: 25px;
 }
@@ -31,7 +35,12 @@
 .App h1,
 h2,
 h3 {
-  font-family: sans-serif;
+  font-family: "Crimson Text", serif;
+  color: #221133;
+}
+
+.App h1 {
+  font-size: 42px;
 }
 
 .EncryptedWord {
@@ -39,7 +48,7 @@ h3 {
   justify-content: center;
   flex-flow: row wrap;
   padding: 0 10px;
-  background-color: salmon;
+  /*background-color: salmon;*/
 }
 
 .LetterSpace {
@@ -47,7 +56,7 @@ h3 {
   justify-content: center;
   flex-flow: column wrap;
   padding: 5px;
-  background-color: salmon;
+  /*background-color: salmon;*/
 }
 
 .InputBox {
@@ -76,14 +85,15 @@ h3 {
 }
 
 .CodedLetter {
-  background-color: salmon;
-  font-size: 20px;
+  /*background-color: salmon;*/
+  font-size: 22px;
   font-weight: bold;
+  font-family: Courier, monospace;
   padding: 5px;
 }
 
 .Punctuation {
-  background-color: salmon;
+  /*background-color: salmon;*/
   font-weight: bold;
   font-size: 25px;
 }
